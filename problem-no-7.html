@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clock</title>
+    <title>Is n Divisible by x and y</title>
   </head>
   <body>
     <script>
-      const past = (h, m, s) => {
-        return (h * 60 * 60 + m * 60 + s) * 1000;
+      const isDivisible = (n, x, y) => {
+        return n % x === 0 && n % y === 0;
       };
-      console.log(past(1, 1, 1));
+      console.log(isDivisible(2, 3, 4));
+      console.log(isDivisible(8, 4, 4)); // false
     </script>
   </body>
 </html>
