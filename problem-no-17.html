@@ -3,21 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Create Phone Number</title>
+    <title>Descending Order</title>
   </head>
   <body>
     <script>
-      const squareDigits = (num) => {
-        return Number(
-          num
+      const descendingOrder = (n) => {
+        return parseInt(
+          n
             .toString()
             .split('')
-            .map((ele) => ele * ele)
+            .sort((a, b) => b - a)
             .join('')
         );
       };
-      console.log(squareDigits(5636));
+      console.log(descendingOrder(123456789));
     </script>
   </body>
 </html>
-<!-- , -->

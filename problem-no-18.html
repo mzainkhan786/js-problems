@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Square Every Digit</title>
+    <title>Document</title>
   </head>
   <body>
     <script>
-      const isSquare = (n) => {
-        return Math.sqrt(n) % 1 === 0;
+      const highAndLow = (numbers) => {
+        const arr = numbers.split(' ');
+        return `${Math.max(...arr)} ${Math.min(...arr)}`;
       };
-      console.log(isSquare(1));
+      console.log(highAndLow('0 -214 542'));
     </script>
   </body>
 </html>
-<!-- , -->
