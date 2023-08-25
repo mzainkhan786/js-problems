@@ -7,15 +7,15 @@
   </head>
   <body>
     <script>
-      const accum = (str) => {
+      const spinWords = (str) => {
         return str
-          .split('')
-          .map(
-            (ele, index) => ele.toUpperCase() + ele.toLowerCase().repeat(index)
+          .split(' ')
+          .map((word) =>
+            word.length < 5 ? word : word.split('').reverse().join('')
           )
-          .join('-');
+          .join(' ');
       };
-      console.log(accum('RqaEzty'));
+      console.log(spinWords('This is another test'));
     </script>
   </body>
 </html>
