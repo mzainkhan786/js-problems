@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find The Parity Outlier</title>
+  </head>
+  <body>
+    <script>
+      const findOutlier = (arr) => {
+        const evenArray = arr.filter((ele) => ele % 2 === 0);
+        const oddArray = arr.filter((ele) => ele % 2 !== 0);
+        return evenArray.length === 1 ? evenArray[0] : oddArray[0];
+      };
+      console.log(findOutlier([160, 3, 1719, 19, 13, -21]));
+      console.log(findOutlier([4, 0, 100, 4, 11, 2602, 36]));
+    </script>
+  </body>
+</html>

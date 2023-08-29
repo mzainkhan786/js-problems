@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shortest Word</title>
+  </head>
+  <body>
+    <script>
+      const findShort = (str) => {
+        return Math.min(...str.split(' ').map((word) => word.length));
+      };
+      console.log(findShort('Test where final word shortest see'));
+    </script>
+  </body>
+</html>

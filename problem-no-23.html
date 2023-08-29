@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sum of positives</title>
+  </head>
+  <body>
+    <script>
+      const positiveSum = (arr) => {
+        return arr.reduce((acc, cur) => (cur > 0 ? acc + cur : acc), 0);
+      };
+      console.log(positiveSum([1, 2, 3, 4, 5]));
+      console.log(positiveSum([1, 2, -3, 4, -5]));
+    </script>
+  </body>
+</html>
