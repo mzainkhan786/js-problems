@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capitalize Words</title>
+  </head>
+  <body>
+    <script>
+      String.prototype.capitalize = function () {
+        return this.split(' ')
+          .map((ele) => ele[0].toUpperCase() + ele.slice(1))
+          .join(' ');
+      };
+      let str = "How can mirrors be real if our eyes aren't real";
+      console.log(str.capitalize());
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exes and ohs</title>
+  </head>
+  <body>
+    <script>
+      const XO = (str) => {
+        const lowerStr = str.toLowerCase();
+        let result = 0;
+        for (const letter of lowerStr) {
+          if (letter === 'x') {
+            result++;
+          } else if (letter === 'o') {
+            result--;
+          }
+        }
+
+        return !result;
+      };
+      console.log(XO('xxxm'));
+      console.log(XO('ooom'));
+    </script>
+  </body>
+</html>

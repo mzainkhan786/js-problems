@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complementary DNA</title>
+  </head>
+  <body>
+    <script>
+      const DNAStrand = (dna) => {
+        const dnaMap = {
+          A: 'T',
+          T: 'A',
+          G: 'C',
+          C: 'G',
+        };
+        return [...dna].map((ele) => dnaMap[ele]).join('');
+        // return [...dna].map((ele) => dnaMap[ele]).join('');
+      };
+      console.log(DNAStrand('ATTGC')); // 'TAACG'
+    </script>
+  </body>
+</html>
